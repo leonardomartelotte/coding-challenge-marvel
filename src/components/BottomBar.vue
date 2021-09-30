@@ -1,7 +1,6 @@
 <template>
   <div class="pb-5">
-    This content is provided and copyrighted by
-    <a href="https://www.marvel.com" target="_blank">Marvel</a>.
+   Data provided by <a href="https://www.marvel.com" target="_blank">Marvel</a>. © 2014 Marvel
   </div>
 </template>
 

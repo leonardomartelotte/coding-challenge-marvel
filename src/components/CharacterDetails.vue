@@ -12,6 +12,11 @@
           class="image"
         />
         <h2>{{ character.data.data.results[0].name }}</h2>
+        <div class="d-flex justify-content-center">
+          <h5 style="max-width: 700px">
+            {{ character.data.data.results[0].description }}
+          </h5>
+        </div>
         <br />
         <div
           class="m-3"
@@ -19,7 +24,7 @@
           style="text-align: left;"
         >
           <h3>Stories:</h3>
-          <ul style="">
+          <ul style="max-width: 700px">
             <li
               v-for="item in character.data.data.results[0].stories.items"
               :key="item.resourceURI"
@@ -35,7 +40,7 @@
           style="text-align: left;"
         >
           <h3>Events:</h3>
-          <ul>
+          <ul style="max-width: 700px">
             <li
               v-for="item in character.data.data.results[0].events.items"
               :key="item.resourceURI"
@@ -51,7 +56,7 @@
           style="text-align: left;"
         >
           <h3>Series:</h3>
-          <ul>
+          <ul style="max-width: 700px">
             <li
               v-for="item in character.data.data.results[0].series.items"
               :key="item.resourceURI"
@@ -75,7 +80,6 @@
           <p>Loading, please wait...</p>
         </div>
       </div>
-
     </div>
     <BottomBar />
   </div>
@@ -154,10 +158,10 @@ export default {
                 "http://gateway.marvel.com/v1/public/characters/" +
                   this.$route.query.id +
                   "?apikey=" +
-                  key.data +
-                  "&limit=100"
+                  key.data
               )
               .then((res) => {
+                console.log(res);
                 this.character = res;
                 this.isLoading = false;
               })

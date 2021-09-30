@@ -1,24 +1,26 @@
 # coding-challenge-marvel
 
-## Project setup
+## Developed by: Leonardo Rodrigues Martelotte
+# Coding Challenge
+
+## Project setup for running locally
+### Step 1/2: install dependencies
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+### Step 2/2: Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Project setup for compiling for production
+### Step 1/2: install dependencies
+```
+npm install
+```
+### Step 2/2: Compiles and minifies 
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### For support:
+leonardomartelotte@gmail.com

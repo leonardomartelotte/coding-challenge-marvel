@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="min-height: 100vh">
     <div class="d-flex justify-content-center mt-4 pt-4">
       <NavBar />
       <div class="card mx-1 my-5 p-0" style="background-color: #212529;">
@@ -180,14 +180,7 @@ export default {
     width: 800px;
     height: 800px;
     object-fit: cover;
-  }
-}
-
-@media (max-width: 899px) {
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-position: 0px 0px;
   }
 }
 </style>
